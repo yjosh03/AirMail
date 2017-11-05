@@ -2,13 +2,15 @@
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-scale" />
   <title>US AirMail</title>
   <!-- Prebuilt Leaflet css -->
   <link rel="stylesheet" href="./src/Leaflet-1.2.0/leaflet.css" />
   <!-- Leaflet Core JS  -->
   <script src="./src/Leaflet-1.2.0/leaflet.js"></script>
   <!-- Source .JS fie -->
-  <script src=".public/json/mail.js"></script>
+  <script src="./public/json/mail.js"></script>
   <style type="text/css">
     #map {height : 400px; }
   </style>
@@ -20,6 +22,7 @@
   <script>
     var map = L.map('map').setView([37.8, -96], 5);
     var maillayer = l.geoJson(mailroutes).addTo(map);
+    
   </script>
 </body>
 
